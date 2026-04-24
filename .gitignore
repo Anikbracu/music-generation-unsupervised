@@ -26,9 +26,9 @@ outputs/models/*.pth
 *.pth
 
 # Generated outputs (keep structure, ignore contents)
-outputs/generated_midis/*.mid
-outputs/generated_midis/*.midi
-outputs/plots/*.png
+#outputs/generated_midis/*.mid
+#outputs/generated_midis/*.midi
+#outputs/plots/*.png
 
 # OS
 .DS_Store
