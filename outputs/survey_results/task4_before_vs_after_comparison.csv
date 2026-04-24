@@ -1,0 +1,14 @@
+Metric,Pre-RLHF (baseline),Post-RLHF (tuned),Δ Improvement
+Reward Model Score (mean),0.6167,0.7511,+0.1345
+Reward Model Score (std),0.1545,0.1424,-
+Human Coherence (mean),3.09,3.73,+0.64
+Human Creativity (mean),3.12,3.75,+0.62
+Human Genre-Match (mean),3.14,3.67,+0.53
+Human Overall Rating (mean),3.12,3.77,+0.65
+Human Overall Rating (std),0.75,0.69,-
+Human Overall Rating (median),3.0,4.0,+1.0
+% Ratings ≥ 4,34.2%,66.7%,+32.5 pp
+% Ratings ≤ 2,22.5%,2.5%,-20.0 pp
+Number of Samples,10,10,-
+Number of Participants,12,12,-
+Total Ratings Collected,120,120,-

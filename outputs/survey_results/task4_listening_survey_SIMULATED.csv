@@ -1,0 +1,121 @@
+participant_id,sample_id,genre,file,coherence_1_5,creativity_1_5,genre_match_1_5,overall_1_5,comments
+1,1,Classical,task4_survey_sample1_Classical.mid,2,3,2,2,Struggles to keep pattern
+1,2,Jazz,task4_survey_sample2_Jazz.mid,5,4,4,4,Genre feel came through
+1,3,Rock,task4_survey_sample3_Rock.mid,4,5,3,4,Catchy and well-structured
+1,4,Pop,task4_survey_sample4_Pop.mid,4,2,4,3,
+1,5,Electronic,task4_survey_sample5_Electronic.mid,2,3,2,3,
+1,6,Classical,task4_survey_sample6_Classical.mid,2,2,2,2,
+1,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,2,2,Felt mechanical
+1,8,Rock,task4_survey_sample8_Rock.mid,2,4,3,3,
+1,9,Pop,task4_survey_sample9_Pop.mid,3,3,3,3,Mixed feelings
+1,10,Electronic,task4_survey_sample10_Electronic.mid,4,3,3,3,"Not bad, abrupt ending"
+2,1,Classical,task4_survey_sample1_Classical.mid,3,3,3,3,Has potential
+2,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,4,4,Creative note choices
+2,3,Rock,task4_survey_sample3_Rock.mid,4,4,4,4,
+2,4,Pop,task4_survey_sample4_Pop.mid,4,4,4,4,Catchy and well-structured
+2,5,Electronic,task4_survey_sample5_Electronic.mid,3,3,3,3,Decent but repetitive
+2,6,Classical,task4_survey_sample6_Classical.mid,3,3,3,2,Coherent but plain
+2,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,3,2,Struggles to keep pattern
+2,8,Rock,task4_survey_sample8_Rock.mid,4,4,4,4,Nice rhythmic flow
+2,9,Pop,task4_survey_sample9_Pop.mid,4,4,4,4,Surprisingly musical
+2,10,Electronic,task4_survey_sample10_Electronic.mid,4,4,4,4,
+3,1,Classical,task4_survey_sample1_Classical.mid,3,3,2,3,
+3,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,3,4,Genre feel came through
+3,3,Rock,task4_survey_sample3_Rock.mid,3,3,3,3,
+3,4,Pop,task4_survey_sample4_Pop.mid,3,2,3,3,"OK overall, needs variation"
+3,5,Electronic,task4_survey_sample5_Electronic.mid,3,3,2,2,Lacks coherence
+3,6,Classical,task4_survey_sample6_Classical.mid,2,3,2,3,
+3,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,2,2,Too random-sounding
+3,8,Rock,task4_survey_sample8_Rock.mid,3,3,4,3,Genre is loose
+3,9,Pop,task4_survey_sample9_Pop.mid,3,3,2,2,
+3,10,Electronic,task4_survey_sample10_Electronic.mid,4,4,4,4,Good sense of direction
+4,1,Classical,task4_survey_sample1_Classical.mid,3,3,3,3,"Not bad, abrupt ending"
+4,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,4,4,Creative note choices
+4,3,Rock,task4_survey_sample3_Rock.mid,4,4,4,3,Nice rhythmic flow
+4,4,Pop,task4_survey_sample4_Pop.mid,3,3,3,3,Has potential
+4,5,Electronic,task4_survey_sample5_Electronic.mid,2,2,2,2,Too random-sounding
+4,6,Classical,task4_survey_sample6_Classical.mid,2,3,3,2,Too random-sounding
+4,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,2,2,Hard to follow
+4,8,Rock,task4_survey_sample8_Rock.mid,4,4,4,4,Felt like a real piece
+4,9,Pop,task4_survey_sample9_Pop.mid,3,3,3,3,"Not bad, abrupt ending"
+4,10,Electronic,task4_survey_sample10_Electronic.mid,4,3,4,4,Surprisingly musical
+5,1,Classical,task4_survey_sample1_Classical.mid,2,2,3,3,
+5,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,4,4,Felt like a real piece
+5,3,Rock,task4_survey_sample3_Rock.mid,4,3,4,4,
+5,4,Pop,task4_survey_sample4_Pop.mid,4,4,3,4,Pleasant to listen to
+5,5,Electronic,task4_survey_sample5_Electronic.mid,2,2,3,2,
+5,6,Classical,task4_survey_sample6_Classical.mid,3,2,2,3,
+5,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,3,3,Lacks coherence
+5,8,Rock,task4_survey_sample8_Rock.mid,4,4,4,4,Nice rhythmic flow
+5,9,Pop,task4_survey_sample9_Pop.mid,3,4,4,4,Catchy and well-structured
+5,10,Electronic,task4_survey_sample10_Electronic.mid,3,3,3,3,"OK overall, needs variation"
+6,1,Classical,task4_survey_sample1_Classical.mid,2,2,3,3,
+6,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,3,4,Creative note choices
+6,3,Rock,task4_survey_sample3_Rock.mid,4,4,4,4,
+6,4,Pop,task4_survey_sample4_Pop.mid,4,3,3,3,Has potential
+6,5,Electronic,task4_survey_sample5_Electronic.mid,1,2,2,2,
+6,6,Classical,task4_survey_sample6_Classical.mid,2,2,2,3,Lacks coherence
+6,7,Jazz,task4_survey_sample7_Jazz.mid,1,2,2,2,Hard to follow
+6,8,Rock,task4_survey_sample8_Rock.mid,4,4,4,4,Felt like a real piece
+6,9,Pop,task4_survey_sample9_Pop.mid,3,3,3,3,
+6,10,Electronic,task4_survey_sample10_Electronic.mid,3,3,3,3,
+7,1,Classical,task4_survey_sample1_Classical.mid,3,2,3,3,Has potential
+7,2,Jazz,task4_survey_sample2_Jazz.mid,3,4,4,3,
+7,3,Rock,task4_survey_sample3_Rock.mid,4,2,4,4,Rhythm unclear in places
+7,4,Pop,task4_survey_sample4_Pop.mid,3,4,3,4,
+7,5,Electronic,task4_survey_sample5_Electronic.mid,2,3,2,3,Notes feel disconnected
+7,6,Classical,task4_survey_sample6_Classical.mid,3,2,3,2,Struggles to keep pattern
+7,7,Jazz,task4_survey_sample7_Jazz.mid,3,2,3,2,
+7,8,Rock,task4_survey_sample8_Rock.mid,4,3,4,3,
+7,9,Pop,task4_survey_sample9_Pop.mid,3,4,4,4,Pleasant to listen to
+7,10,Electronic,task4_survey_sample10_Electronic.mid,3,4,4,4,
+8,1,Classical,task4_survey_sample1_Classical.mid,3,3,2,2,Little melody
+8,2,Jazz,task4_survey_sample2_Jazz.mid,3,4,4,4,Catchy and well-structured
+8,3,Rock,task4_survey_sample3_Rock.mid,3,4,3,4,Mixed feelings
+8,4,Pop,task4_survey_sample4_Pop.mid,3,2,2,3,Lacks coherence
+8,5,Electronic,task4_survey_sample5_Electronic.mid,3,2,3,3,
+8,6,Classical,task4_survey_sample6_Classical.mid,2,3,3,2,Felt mechanical
+8,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,1,2,Hard to follow
+8,8,Rock,task4_survey_sample8_Rock.mid,4,4,4,4,
+8,9,Pop,task4_survey_sample9_Pop.mid,4,3,3,4,Decent but repetitive
+8,10,Electronic,task4_survey_sample10_Electronic.mid,4,3,4,3,
+9,1,Classical,task4_survey_sample1_Classical.mid,3,3,3,3,
+9,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,4,4,
+9,3,Rock,task4_survey_sample3_Rock.mid,3,3,3,3,
+9,4,Pop,task4_survey_sample4_Pop.mid,3,2,3,3,Decent but repetitive
+9,5,Electronic,task4_survey_sample5_Electronic.mid,2,3,2,2,
+9,6,Classical,task4_survey_sample6_Classical.mid,3,3,3,3,
+9,7,Jazz,task4_survey_sample7_Jazz.mid,2,3,2,2,
+9,8,Rock,task4_survey_sample8_Rock.mid,4,3,4,4,
+9,9,Pop,task4_survey_sample9_Pop.mid,3,3,3,3,"Not bad, abrupt ending"
+9,10,Electronic,task4_survey_sample10_Electronic.mid,3,3,4,3,Mixed feelings
+10,1,Classical,task4_survey_sample1_Classical.mid,5,3,4,4,Surprisingly musical
+10,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,5,4,Genre feel came through
+10,3,Rock,task4_survey_sample3_Rock.mid,3,4,4,3,Has potential
+10,4,Pop,task4_survey_sample4_Pop.mid,3,3,4,3,"Not bad, abrupt ending"
+10,5,Electronic,task4_survey_sample5_Electronic.mid,3,3,4,3,"OK overall, needs variation"
+10,6,Classical,task4_survey_sample6_Classical.mid,4,4,4,4,
+10,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,2,2,
+10,8,Rock,task4_survey_sample8_Rock.mid,3,5,4,4,Creative note choices
+10,9,Pop,task4_survey_sample9_Pop.mid,3,4,4,3,"OK overall, needs variation"
+10,10,Electronic,task4_survey_sample10_Electronic.mid,4,4,4,4,Creative note choices
+11,1,Classical,task4_survey_sample1_Classical.mid,3,2,2,3,Genre barely recognizable
+11,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,4,4,Genre feel came through
+11,3,Rock,task4_survey_sample3_Rock.mid,3,3,3,3,
+11,4,Pop,task4_survey_sample4_Pop.mid,4,3,3,3,"OK overall, needs variation"
+11,5,Electronic,task4_survey_sample5_Electronic.mid,2,3,2,2,
+11,6,Classical,task4_survey_sample6_Classical.mid,2,3,2,2,Struggles to keep pattern
+11,7,Jazz,task4_survey_sample7_Jazz.mid,1,2,2,2,Genre barely recognizable
+11,8,Rock,task4_survey_sample8_Rock.mid,4,4,4,4,Good sense of direction
+11,9,Pop,task4_survey_sample9_Pop.mid,4,4,3,4,
+11,10,Electronic,task4_survey_sample10_Electronic.mid,3,4,3,3,Rhythm unclear in places
+12,1,Classical,task4_survey_sample1_Classical.mid,3,3,3,3,"OK overall, needs variation"
+12,2,Jazz,task4_survey_sample2_Jazz.mid,4,4,4,4,Surprisingly musical
+12,3,Rock,task4_survey_sample3_Rock.mid,3,4,3,3,
+12,4,Pop,task4_survey_sample4_Pop.mid,3,4,3,3,"Not bad, abrupt ending"
+12,5,Electronic,task4_survey_sample5_Electronic.mid,3,3,3,3,
+12,6,Classical,task4_survey_sample6_Classical.mid,2,2,2,2,
+12,7,Jazz,task4_survey_sample7_Jazz.mid,2,2,2,2,Little melody
+12,8,Rock,task4_survey_sample8_Rock.mid,3,3,4,3,
+12,9,Pop,task4_survey_sample9_Pop.mid,3,3,3,3,Coherent but plain
+12,10,Electronic,task4_survey_sample10_Electronic.mid,4,3,4,4,

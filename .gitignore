@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files - too large for git
+data/raw_midi/*.mid
+data/raw_midi/*.midi
+data/processed/*.npz
+data/processed/*.npy
+data/train_test_split/*.npy
+
+# Trained models
+outputs/models/*.pt
+outputs/models/*.pth
+*.pt
+*.pth
+
+# Generated outputs (keep structure, ignore contents)
+outputs/generated_midis/*.mid
+outputs/generated_midis/*.midi
+outputs/plots/*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# LaTeX build artifacts
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.bbl
+report/*.blg
+report/*.synctex.gz
+report/*.pdf
+
+# Keep empty directories
+!.gitkeep
