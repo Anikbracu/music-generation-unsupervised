@@ -1,70 +1,50 @@
-"""
-MIDI file discovery and batch parsing utilities.
-"""
-
-import os
-import glob
-import argparse
-import numpy as np
-from tqdm import tqdm
-import pretty_midi
-
-from ..config import cfg
-
-
-def find_midi_files(root_dir):
-    """Recursively discover all .mid/.midi files under root_dir."""
-    if not os.path.exists(root_dir):
+def find_midi_files(root):
+    if not os.path.exists(root):
         return []
-    files  = glob.glob(os.path.join(root_dir, '**', '*.mid'),  recursive=True)
-    files += glob.glob(os.path.join(root_dir, '**', '*.midi'), recursive=True)
-    return sorted(files)
+    files  = glob.glob(os.path.join(root, '**', '*.mid'),  recursive=True)
+    files += glob.glob(os.path.join(root, '**', '*.midi'), recursive=True)
+    return files
 
 
-def parse_midi_dataset(root_dir, max_files=None):
-    """Parse all MIDI files and return valid PrettyMIDI objects + their paths."""
-    files = find_midi_files(root_dir)
-    if max_files is not None:
-        files = files[:max_files]
-
-    parsed = []
-    for f in tqdm(files, desc='Parsing MIDI'):
-        try:
-            pm = pretty_midi.PrettyMIDI(f)
-            if len(pm.instruments) == 0:
-                continue
-            parsed.append((f, pm))
-        except Exception:
-            continue
-    print(f"Successfully parsed {len(parsed)}/{len(files)} MIDI files.")
-    return parsed
-
-
-def infer_genre(filename, genres=None):
-    """Heuristic: genre inferred from filename prefix (e.g., 'Classical_01.mid')."""
-    if genres is None:
-        genres = cfg.GENRES
-    basename = os.path.basename(filename).split('_')[0]
-    return genres.index(basename) if basename in genres else -1
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--input',  default=cfg.RAW_MIDI_DIR)
-    parser.add_argument('--output', default=cfg.PROCESSED_DIR)
-    parser.add_argument('--max_files', type=int, default=cfg.MAX_FILES)
-    args = parser.parse_args()
-
-    cfg.make_dirs()
-    parsed = parse_midi_dataset(args.input, max_files=args.max_files)
-
-    # Save the list of successfully parsed file paths
-    out_list = os.path.join(args.output, 'parsed_files.txt')
-    with open(out_list, 'w') as f:
-        for path, _ in parsed:
-            f.write(path + '\n')
-    print(f"Saved parsed file list → {out_list}")
+def generate_synthetic_midi(n_files=200, out_dir='/kaggle/working/synthetic_midi'):
+    '''Fallback: generate simple synthetic MIDIs across pseudo-genres.'''
+    os.makedirs(out_dir, exist_ok=True)
+    paths = []
+    scales = {
+        'Classical':  [60, 62, 64, 65, 67, 69, 71, 72],
+        'Jazz':       [60, 63, 65, 66, 67, 70, 72, 75],
+        'Rock':       [60, 62, 64, 67, 69, 72, 74, 76],
+        'Pop':        [60, 62, 64, 65, 67, 69, 71, 72],
+        'Electronic': [60, 61, 64, 66, 68, 70, 72, 74],
+    }
+    genres = list(scales.keys())
+    for i in range(n_files):
+        g  = genres[i % len(genres)]
+        pm = pretty_midi.PrettyMIDI(initial_tempo=random.choice([90,110,120,140]))
+        inst = pretty_midi.Instrument(program=0)
+        t = 0.0
+        for _ in range(80):
+            pitch = random.choice(scales[g]) + random.choice([-12, 0, 0, 12])
+            dur   = random.choice([0.25, 0.5, 0.5, 1.0])
+            inst.notes.append(pretty_midi.Note(
+                velocity=random.randint(60,100),
+                pitch=max(0,min(127,pitch)),
+                start=t, end=t+dur))
+            t += dur
+        pm.instruments.append(inst)
+        p = os.path.join(out_dir, f'{g}_{i}.mid')
+        pm.write(p)
+        paths.append(p)
+    return paths
 
 
-if __name__ == '__main__':
-    main()
+# ----- Locate MIDI files -----
+midi_files = find_midi_files(cfg.MIDI_DIR)
+if len(midi_files) < 10:
+    print(f"[!] No real dataset at {cfg.MIDI_DIR}. Using synthetic MIDIs.")
+    midi_files = generate_synthetic_midi(n_files=200)
+else:
+    midi_files = midi_files[:cfg.MAX_FILES]
+
+print(f"Using {len(midi_files)} MIDI files.")
+print(f"Sample: {midi_files[:2]}")
